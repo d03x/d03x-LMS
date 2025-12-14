@@ -4,9 +4,7 @@ import 'package:d03xlms/features/users/domain/repositories/user_repository.dart'
 
 class UserRepositoryImpl implements UserRepository {
   final UserRemoteDatasource userRemoteDatasource;
-
   UserRepositoryImpl({required this.userRemoteDatasource});
-
   @override
   Future<List<UserModel>> getUsers() async {
     final dynamic user = await userRemoteDatasource.getAllUsers();

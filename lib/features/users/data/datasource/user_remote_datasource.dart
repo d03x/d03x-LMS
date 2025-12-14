@@ -10,4 +10,6 @@ class UserRemoteDatasource {
       throw Exception('Gagal terhubung ke server:$e.toString()');
     }
   }
+
+  Future<dynamic> fetchUserById() async {}
 }

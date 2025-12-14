@@ -9,7 +9,6 @@ class GetAllUserUsecase {
   });
   Future<List<UserEntity>> call() async {
     final data = await repository.getUsers();
-    print(data);
     return data;
   }
 }

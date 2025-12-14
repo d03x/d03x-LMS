@@ -13,14 +13,14 @@ class UserScreen extends ConsumerWidget {
       body: RefreshIndicator(
         child: user.when(
           data: (data) {
-            return user.value!.isNotEmpty
+            return data!.isNotEmpty
                 ? ListView.builder(
-                    itemCount: user.value!.length,
+                    itemCount: data.length,
                     itemBuilder: (context, index) {
                       return ListTile(
                         dense: true,
-                        title: Text(user.value![index].username),
-                        subtitle: Text(user.value![index].address.city),
+                        title: Text(data[index].username),
+                        subtitle: Text(data[index].address.suite),
                       );
                     },
                   )
