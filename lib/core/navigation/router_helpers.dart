@@ -2,6 +2,7 @@ import 'package:d03xlms/core/navigation/app_route.dart';
 import 'package:d03xlms/features/home/presentation/screens/home_screen.dart';
 import 'package:d03xlms/features/login/presentation/screens/login_screen.dart';
 import 'package:d03xlms/features/login/profile/screens/profile_screen.dart';
+import 'package:d03xlms/features/users/presentation/pages/user_screen.dart';
 import 'package:d03xlms/shared/widgets/not_found_page.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,9 @@ class RouterHelpers {
       case AppRoute.home:
         return MaterialPageRoute(builder: (context) => HomeScreen());
       case AppRoute.profile:
-        return MaterialPageRoute(builder: (context)=>ProfileScreen());
+        return MaterialPageRoute(builder: (context) => ProfileScreen());
+      case AppRoute.user:
+        return MaterialPageRoute(builder: (context) => UserScreen());
       default:
         MaterialPageRoute(builder: (context) => LoginScreen());
     }

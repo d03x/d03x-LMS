@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          RouterHelpers.navigateTo(AppRoute.login);
+          RouterHelpers.navigateTo(AppRoute.user);
         },
       ),
       body: Text("My Home Screen"),
